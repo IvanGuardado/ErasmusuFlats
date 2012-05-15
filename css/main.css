@@ -1,0 +1,58 @@
+body { height: 100%; min-height: 100%;
+}
+h1 {
+    margin-bottom: 1.8em;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+a { cursor: pointer; }
+
+#filter {
+    width: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    padding: 30px;
+    background: rgba(255, 255, 255, .8);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+    -webkit-transition: all .2s ease-in; 
+    -moz-transition:    all .2s ease-in; 
+    -o-transition:      all .2s ease-in;
+    transition: all .2s ease-in;
+}
+#filter:hover {
+    background: #fff;
+    border-right: 1px solid #666;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: #fff;
+}
+
+.country {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.filter-box { margin-top: 20px; }
+
+input {
+    position: inherit !important;
+}
+
+.dropdown-menu .disabled {
+    color: #CECECE;
+    margin-left: 5px;
+}

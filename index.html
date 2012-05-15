@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+        <link type="text/css" href="css/cartodb.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="filter">
+                <h1>Find out your accommodation</h1>
+                <div class="filter-box">
+                    <p>Maximun price: <span id="price"></span></p>
+                    <div id="price-slider"></div>
+                </div>
+                <div class="filter-box">
+                    <p>Rooms: <span id="rooms"></span></p>
+                    <div id="rooms-slider"></div>
+                </div>
+                <div class="filter-box">
+                    <p><strong>Nearby:</strong></p>
+                    <ul class="unstyled">
+                        <li>
+                            <label class="checkbox"><input id="parks" type="checkbox"> Parks / gardens</label>
+                        </li>
+                        <li>
+                            <label>Metro line</label>
+                            <div class="btn-group">
+                              <button class="btn dropdown-toggle" data-toggle="dropdown"><span id="metro-value">Indiferent</span> <span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                              <li><a class="metro" id="Indiferent" href="#">Indifferent</a></li>
+                                <li><a class="metro" id="L1" href="#">L1</a></li>
+                                <li><a class="metro" id="L2" href="#">L2</a></li>
+                                <li><a class="metro" id="L3" href="#">L3</a></li>
+                                <li><a class="metro" id="L5" href="#">L5</a></li>
+                                <li><a class="metro" id="L7" href="#">L7</a></li>
+                                <li><a class="metro" id="L8" href="#">L8</a></li>
+                                <li><a class="metro" id="L10" href="#">L10</a></li>
+                                <li><a class="metro" id="L11" href="#">L11</a></li>
+                                <li><a class="metro" id="R" href="#">R</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                </div>
+
+            </div>
+            <div id="map">
+            </div>
+        </div>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=drawing"
+            type="text/javascript"></script>
+
+        <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+        <script type="text/javascript" src="js/wax.g.js"></script>
+        <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-31735753-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+</script>
+    </body>
+</html>
